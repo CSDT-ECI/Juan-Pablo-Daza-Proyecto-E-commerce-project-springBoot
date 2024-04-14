@@ -18,6 +18,7 @@
 		<java.version>11</java.version>
 		<sonar.organization>juanpablodaza</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<exec.mainClass>com.jtspringproject.JtSpringProjectApplication</exec.mainClass>
 	</properties>
 	<dependencies>
 
@@ -84,10 +85,6 @@
 			<version>3.12.4</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-		</dependency>
 
 	</dependencies>
 
@@ -110,12 +107,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version>
-			</plugin>     
+			</plugin>  
 		</plugins>
 	</build>
 
