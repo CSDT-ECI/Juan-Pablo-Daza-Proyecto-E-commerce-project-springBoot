@@ -11,6 +11,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+
 import com.jtspringproject.JtSpringProject.services.categoryService;
 
 import java.util.Arrays;
@@ -18,6 +20,7 @@ import java.util.List;
 
 
 @SpringBootTest
+@ActiveProfiles("test")
 public class CategoryServiceTest {
 
     @InjectMocks
