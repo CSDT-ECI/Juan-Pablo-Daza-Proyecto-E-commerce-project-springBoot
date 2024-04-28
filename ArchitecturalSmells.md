@@ -7,15 +7,15 @@ del crecimiento del proyecto:
 
 ## Código Inadecuadamente Documentado: 
 
-El funcionamiento de la aplicacion es explicado en el archivo [README.md](README.md) pero hace falta una parte muy importante de la documentacion, esta es explicar el codigo dentro la aplicacion, desde el principio de la creacion del repositorio no se 
-genero una planeacion en la que le codigo estuviera documentado con la finalidad de que nuevos desarrolladores pudieran entrar al proyecto y poder entender que se esta realizando.
+El funcionamiento de la aplicación es explicado en el archivo [README.md](README.md) pero hace falta una parte muy importante de la documentación, esta es explicar el código dentro la aplicación, desde el principio de la creación del repositorio no se 
+genero una planeación en la que le codigo estuviera documentado con la finalidad de que nuevos desarrolladores pudieran entrar al proyecto y poder entender que se esta realizando.
 
 Esto complica un poco el desarrollo de nuevas funcionalidades puesto que siendo un repositorio abierto muchas personas pueden acceder a este pero no se tiene una
-organizacion que facilite la posibilidad de que los desarrolladores conozcan el contexto de la aplicación ya que es necesario analizar todo el codigo y como veremos mas adelante hay practicas de mala calidad en el proyecto.
+organización que facilite la posibilidad de que los desarrolladores conozcan el contexto de la aplicación ya que es necesario analizar todo el codigo y como veremos mas adelante hay practicas de mala calidad en el proyecto.
 
 ## Acoplamiento Excesivo y código duplicado:
 
-Dentro del proyecto hay dos grndes factores que puden generar problemas a largo plazo, 
+Dentro del proyecto hay dos grandes factores que puden generar problemas a largo plazo, 
 como por ejemplo, dentro de la clase [UserController.java](./JtProject/src/main/java/com/jtspringproject/JtSpringProject/controller/UserController.java) existe codigo duplicado que puede afectar al rendimiento ya que intenta validar si un objeto esta dentro de una lista varias veces y ademas de que esta modificando la clase [User.java](./JtProject/src/main/java/com/jtspringproject/JtSpringProject/models/User.java) rompiendo los principios SOLID.
 
 ## TDD (Test Driven Development):
